@@ -17,6 +17,7 @@ return`Walk home with ${dogName} the ${dogBreed}`
 function unleashDog(dogName, dogBreed){
 return`Unleash ${dogName} the ${dogBreed}`
 }
+
 const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
 function exerciseDog(dogName, dogBreed){
   let exercise = []
