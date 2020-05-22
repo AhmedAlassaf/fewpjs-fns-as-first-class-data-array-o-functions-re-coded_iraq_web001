@@ -1,11 +1,4 @@
-const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
-function exerciseDog(dogName, dogBreed){
-  let exercise = []
-  for (let i = 0; i<routine.length; i++){
-    let exercise = routine[i](dogName,dogBreed);
-  }
-  return exercise
-}
+
 function wakeDog(dogName, dogBreed){
 return`Wake ${dogName} the ${dogBreed}`
 }
@@ -23,4 +16,12 @@ return`Walk home with ${dogName} the ${dogBreed}`
 }
 function unleashDog(dogName, dogBreed){
 return`Unleash ${dogName} the ${dogBreed}`
+}
+const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
+function exerciseDog(dogName, dogBreed){
+  let exercise = []
+  for (let i = 0; i<routine.length; i++){
+    let exercise = routine[i](dogName,dogBreed);
+  }
+  return exercise
 }
